@@ -15,15 +15,23 @@ A base de dados utilizada é sintética e reduzida intencionalmente ($n=20$) par
 
 ## 🧠 Análises Realizadas
 O script gera visualizações para responder a perguntas de negócio como:
+
 ⚫ Qual a distribuição de colaboradores por região?
+
 ⚪ Como os salários estão distribuídos? (Detecção de assimetrias)
+
 ⚫ Existem *outliers* (valores discrepantes) nos salários?
+
 ⚪ Existe correlação linear entre a idade do colaborador e a sua remuneração?
 
 ## 🛠️ Tecnologias Utilizadas
+
 ⚫ **Python:** Linguagem base.
+
 ⚪ **Pandas:** Manipulação e estruturação dos dados tabulares.
+
 ⚫ **Seaborn & Matplotlib:** Visualização de dados estatísticos.
+
 ⚪ **OS:** Gestão de diretórios para exportação automática dos relatórios visuais.
 
 ## 📈 Visualizações Geradas
@@ -45,7 +53,9 @@ Gráfico de dispersão para investigar a relação entre maturidade profissional
 ![Scatter](images/scatter_idade_renda.png)
 
 ## 🚀 Como Executar
+
 1. Clone este repositório.
+
 2. Instale as dependências:
    ```bash
    pip install pandas seaborn matplotlib
