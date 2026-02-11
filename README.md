@@ -6,20 +6,25 @@
 ## 📝 Sobre o Projeto
 Este projeto apresenta um pipeline de **Análise Exploratória de Dados (EDA)** focado em Recursos Humanos (*People Analytics*).
 
-O objetivo foi aplicar técnicas de Estatística Descritiva utilizando Python para analisar padrões salariais, distribuição demográfica e correlações entre variáveis de carreira (como Idade e Renda) em um dataset simulado.
+O objetivo foi aplicar técnicas de Estatística Descritiva utilizando Python para analisar padrões salariais, distribuição demográfica e correlações entre variáveis de carreira (como Idade e Renda) num dataset simulado.
+
+## ⚠️ Nota Técnica (Proof of Concept)
+Este projeto funciona como uma **Prova de Conceito (PoC)** para a estruturação de pipelines de análise de dados. 
+
+A base de dados utilizada é sintética e reduzida intencionalmente ($n=20$) para focar o projeto estritamente na construção do código, na limpeza de dados (*Data Cleaning*) e nas visualizações (EDA). Num ambiente real de produção, este exato script seria dimensionado para bases de dados com milhares de registos, onde as distribuições e correlações atingiriam a devida significância estatística.
 
 ## 🧠 Análises Realizadas
 O script gera visualizações para responder a perguntas de negócio como:
-* Qual a distribuição de colaboradores por região?
-* Como os salários estão distribuídos? (Detecção de assimetrias)
-* Existem *outliers* (valores discrepantes) nos salários?
-* Existe correlação linear entre a idade do colaborador e sua renda?
+⚫ Qual a distribuição de colaboradores por região?
+⚪ Como os salários estão distribuídos? (Detecção de assimetrias)
+⚫ Existem *outliers* (valores discrepantes) nos salários?
+⚪ Existe correlação linear entre a idade do colaborador e a sua remuneração?
 
 ## 🛠️ Tecnologias Utilizadas
-* **Python:** Linguagem base.
-* **Pandas:** Manipulação e estruturação dos dados tabulares.
-* **Seaborn & Matplotlib:** Visualização de dados estatísticos.
-* **OS:** Gerenciamento de diretórios para exportação automática dos relatórios visuais.
+⚫ **Python:** Linguagem base.
+⚪ **Pandas:** Manipulação e estruturação dos dados tabulares.
+⚫ **Seaborn & Matplotlib:** Visualização de dados estatísticos.
+⚪ **OS:** Gestão de diretórios para exportação automática dos relatórios visuais.
 
 ## 📈 Visualizações Geradas
 
