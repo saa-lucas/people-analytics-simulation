@@ -1,61 +1,61 @@
-# 👥 People Analytics: Análise de Salários e Carreira
+# 👥 People Analytics: Salary and Career Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Status](https://img.shields.io/badge/Status-Concluído-green)
+![Status](https://img.shields.io/badge/Status-Completed-green)
 
-## 📝 Sobre o Projeto
-Este projeto apresenta um pipeline de **Análise Exploratória de Dados (EDA)** focado em Recursos Humanos (*People Analytics*).
+## 📝 About the Project
+This project presents an **Exploratory Data Analysis (EDA)** pipeline focused on Human Resources (*People Analytics*).
 
-O objetivo foi aplicar técnicas de Estatística Descritiva utilizando Python para analisar padrões salariais, distribuição demográfica e correlações entre variáveis de carreira (como Idade e Renda) num dataset simulado.
+The objective was to apply Descriptive Statistical techniques using Python to analyze salary patterns, demographic distribution, and correlations between career variables (such as Age and Income) in a simulated dataset.
 
-## ⚠️ Nota Técnica (Proof of Concept)
-Este projeto funciona como uma **Prova de Conceito (PoC)** para a estruturação de pipelines de análise de dados. 
+## ⚠️ Technical Note (Proof of Concept)
+This project serves as a **Proof of Concept (PoC)** for structuring data analysis pipelines. 
 
-A base de dados utilizada é sintética e reduzida intencionalmente ($n=20$) para focar o projeto estritamente na construção do código, na limpeza de dados (*Data Cleaning*) e nas visualizações (EDA). Num ambiente real de produção, este exato script seria dimensionado para bases de dados com milhares de registos, onde as distribuições e correlações atingiriam a devida significância estatística.
+The database used is synthetic and intentionally small ($n=20$) to focus the project strictly on code construction, data cleaning, and visualizations (EDA). In a real production environment, this exact script would be scaled for databases with thousands of records, where distributions and correlations would reach proper statistical significance.
 
-## 🧠 Análises Realizadas
-O script gera visualizações para responder a perguntas de negócio como:
+## 🧠 Analysis Performed
+The script generates visualizations to answer business questions such as:
 
-⚫ Qual a distribuição de colaboradores por região?
+⚫ What is the distribution of employees by region?
 
-⚪ Como os salários estão distribuídos? (Detecção de assimetrias)
+⚪ How are salaries distributed? (Detection of asymmetries)
 
-⚫ Existem *outliers* (valores discrepantes) nos salários?
+⚫ Are there *outliers* (discrepant values) in salaries?
 
-⚪ Existe correlação linear entre a idade do colaborador e a sua remuneração?
+⚪ Is there a linear correlation between the employee's age and their compensation?
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-⚫ **Python:** Linguagem base.
+⚫ **Python:** Base language.
 
-⚪ **Pandas:** Manipulação e estruturação dos dados tabulares.
+⚪ **Pandas:** Manipulation and structuring of tabular data.
 
-⚫ **Seaborn & Matplotlib:** Visualização de dados estatísticos.
+⚫ **Seaborn & Matplotlib:** Statistical data visualization.
 
-⚪ **OS:** Gestão de diretórios para exportação automática dos relatórios visuais.
+⚪ **OS:** Directory management for automatic export of visual reports.
 
-## 📈 Visualizações Geradas
+## 📈 Visualizations Generated
 
-### 1. Distribuição Geográfica
-Análise de frequência absoluta dos colaboradores por região.
+### 1. Geographic Distribution
+Absolute frequency analysis of employees by region.
 ![Região](images/distribuicao_regiao.png)
 
-### 2. Análise de Renda (Histograma)
-Visualização da distribuição de frequência dos salários.
+### 2. Income Analysis (Histogram)
+Frequency distribution visualization of salaries.
 ![Histograma](images/histograma_renda.png)
 
-### 3. Detecção de Outliers (Boxplot)
-Uso de medidas de posição (quartis) para identificar dispersão salarial.
+### 3. Outlier Detection (Boxplot)
+Use of position measures (quartiles) to identify salary dispersion.
 ![Boxplot](images/boxplot_renda.png)
 
-### 4. Correlação: Idade x Renda
-Gráfico de dispersão para investigar a relação entre maturidade profissional e remuneração.
+### 4. Correlation: Age x Income
+Scatter plot to investigate the relationship between professional maturity and compensation.
 ![Scatter](images/scatter_idade_renda.png)
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-1. Clone este repositório.
+1. Clone this repository.
 
-2. Instale as dependências:
+2. Install the dependencies:
    ```bash
    pip install pandas seaborn matplotlib
