@@ -12,10 +12,6 @@ import os # Biblioteca para gerenciar pastas/arquivos
 # Configuração para melhorar a visualização dos gráficos no Spyder
 sns.set_theme(style="whitegrid")
 
-# Cria a pasta 'images' se ela não existir (para o GitHub)
-if not os.path.exists('images'):
-    os.makedirs('images')
-
 # ---------------------------------------------------------
 # 2. Criação de um Banco de Dados Simulado
 # Simulando uma tabela com observações (linhas) e variáveis (colunas)
@@ -59,7 +55,7 @@ print("\nFrequência Relativa (%):\n", freq_relativa)
 
 # Gráfico de Barras (Visualização)
 plt.figure(figsize=(8, 5))
-# Ajuste: adicionei hue e legend=False para evitar warnings recentes do Seaborn
+# Adicionei hue e legend=False para evitar warnings recentes do Seaborn
 sns.countplot(x='Regiao', data=df, hue='Regiao', palette='viridis', legend=False)
 plt.title('Distribuição dos Clientes por Região')
 plt.ylabel('Contagem')
@@ -107,7 +103,7 @@ plt.savefig('images/boxplot_renda.png') # Salva a imagem
 plt.show()
 
 # ---------------------------------------------------------
-# 5. Dica Extra: Correlação (Relação entre Idade e Renda)
+# 5. Correlação (Relação entre Idade e Renda)
 # ---------------------------------------------------------
 print("\n--- Matriz de Correlação ---")
 print(df[['Idade', 'Renda_Mensal']].corr())
@@ -119,5 +115,6 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left') # Legenda para fora
 plt.tight_layout() # Ajusta para não cortar a legenda
 plt.savefig('images/scatter_idade_renda.png') # Salva a imagem
 plt.show()
+
 
 print("\n--- Processo Finalizado! As imagens foram salvas na pasta 'images' ---")
